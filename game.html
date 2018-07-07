@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Rock-Paper-Scissor Game</title>
+  <!-- BOOTSTRAP  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <!-- Font Awesome icon -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <style type="text/css">
+
+  .btn-warning.outline {
+  border: 5px solid #0099cc;
+  color: #0099cc;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header class="jumbotron jumbotron-fluid text-center bg-info text-white mb-0 p-4"> 
+    <div class="container">
+      <div class="row">
+
+        <div class="d-flex mr-3 ml-3">
+          <div class="d-flex-inline bg-warning rounded-left p-2 text-secondary"> Win</div>
+          <div class="d-flex-inline bg-white text-info rounded-right p-2">0</div>
+        </div>
+
+        <div class="d-flex">
+          <div class="d-flex-inline bg-warning rounded-left p-2 text-secondary"> Lose</div>
+          <div class="d-flex-inline bg-white text-info rounded-right p-2">0</div>
+        </div>      
+
+      </div> <!-- row end -->
+      
+      <h1 class="text-white" style="position: absolute; top: 20px; right: 40px">Rock-Paper-Scissor</h1> 
+
+
+      <divc class="row">
+        <div class="col-3"></div>
+        <div id="headerFormHolder" class="col-6" >  
+          
+        </div> <!-- header from holder end -->
+      </div> <!-- row end -->
+
+    </div>
+  </header>
+
+  <section class="container mt-0">
+    <div class="d-flex justify-content-between" id="nameHolder">
+      <div class="d-inline-flex py-2 px-4 bg-info text-white" id="myName">YUXIN HE</div>
+      <div class="d-inline-flex py-2 px-4 bg-warning text-secondary" id="opponentName">LUSU NI</div>
+    </div>
+    <!-- <div class="bg-info text-white rounded text-center py-2">
+      <h4>Yuxin V.S. lusu</h4>
+    </div>   -->  
+    <div class="row">
+
+      <div class="col-6"> <!-- col-6 start -->      
+        <div style= "max-width:250px" class="mx-auto">
+        <img class="card-img-bottom" src="assets/imgs/paper2.png">
+        </div>        
+      </div><!-- col-6 end -->
+
+      <div class="col-6"> <!-- col-6 start --> 
+        <div style= "max-width:250px" class="mx-auto">
+        <img class="card-img-bottom" src="assets/imgs/paper.png" style="transform: scaleX(-1)"> 
+        </div>      
+      </div><!-- col-6 end -->
+
+    </div> <!-- row end --> 
+
+    <div class="row d-flex justify-content-center mt-4">
+
+      <div class="btn btn-outline-warning d-inline-flex m-1" id="paper"> 
+        <img src="assets/imgs/paper.png"  style="max-height: 70px; border-width: thick;" >         
+      </div>
+
+      <div class="btn btn-warning d-inline-flex m-1" id="scissor"> 
+        <img src="assets/imgs/scissor.png" style="max-height: 70px;">  
+      </div>
+
+      <div class="btn btn-warning d-inline-flex m-1" id="rock"> 
+        <img src="assets/imgs/rock.png" style="max-height: 70px;"> 
+      </div>
+
+      <div class="btn btn-warning d-inline-flex m-1" id="radom"> 
+        <img src="assets/imgs/radom.gif" style="max-height: 70px;"> 
+      </div>
+      
+    </div><!-- row end --> 
+
+    <div class="row mt-4 mx-1">
+      <div id="chatContent" style="height: 150px;" class="border-info border rounded-top col-12">
+      </div>
+      
+        <form class="col-12 mt-2">
+              <div class="input-group float-right align-bottom">
+                <input type="text" id="chatLines" class="form-control" placeholder="type in here ... ">
+                <div class="input-group-append">
+                  <button id="chatInput" class="btn btn-warning text-secondary" type="submit">submit</button>
+                </div>
+              </div>
+        </form>
+    </div><!-- row end --> 
+
+  </section>
+
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+  <script type="text/javascript" src="assets/JS/myJS.js"></script>
+
+</body>
+
+</html>
